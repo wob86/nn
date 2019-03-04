@@ -43,21 +43,21 @@ int main (int argc, char * const argv[]) {
 	float pinf[4];
 	float binf, n1;
 	string win[4];
-	string pin[2];
+	string pin[3];
 	int i =0;
 	
 	ifstream reader1("Wb_trained.txt");
 	
 	if( ! reader1)
 		{
-			cout <<"error opening file!!!"<<endl;
+			cout << "error opening file!!!" << endl;
 			return -1;
 		}
 	ifstream reader2("P.dat");
 	
 	if( ! reader2)
 		{
-			cout <<"error opening file!!!"<<endl;
+			cout << "error opening file!!!" << endl;
 			return -1;
 		}
 	
@@ -101,6 +101,6 @@ int main (int argc, char * const argv[]) {
 	mine.assignp(pinf[0], pinf[1], pinf[2]);
 	n1 = mine.tot();
 	
-	cout <<mine.tansig(n1)<<endl;
+	cout << mine.tansig(n1) << endl;
     return 0;
 }
